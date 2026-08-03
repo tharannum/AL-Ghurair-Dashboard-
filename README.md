@@ -6,6 +6,8 @@
 
 This Business Intelligence project analyzes Al Ghurair’s procurement and warehouse dataset using Power BI to unify financial commitments with inventory operations. The goal is to provide clear, executive-level visibility across procurement spend, supplier SLA reliability, physical inventory valuation, and warehouse material flows.
 
+![Al Ghurair](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/Al%20ghurair.png)
+
 The analysis includes:
 
 * **Procurement Spend Analysis:** Total spend commitments, order volume, and category distribution over time.
@@ -52,6 +54,8 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 * Created calculated columns for actual lead time in days, delivery status flags, and stock health indicators.
 
 ### Data Model (Star Schema)
+
+![Spend Breakdown](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/datamodelling.png)
 
 * **Fact Tables:**
 * `Fact_PurchaseOrders` (PO commitments and vendor delivery performance)
@@ -106,7 +110,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q1.1: Where is our capital going? What is our total procurement spend, and how is it distributed across suppliers, product categories, and order statuses?**
 
 * **Dashboard Visual Location:** Top Left KPI Card + Donut Chart + Top Right Supplier Matrix.
-* **Image Placeholder:** `![Spend Breakdown](./images/spend_distribution_donut.png)`
+  ![Spend Breakdown](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/procurement.png)
 * **Data-Driven Answer:**
 * **Total Procurement Spend:** **AED 527K** across 25 Purchase Orders.
 * **Category Distribution:** Spending is heavily concentrated in **Raw Materials (46.72% / AED 246.2K)**, followed by **Maintenance (22.71% / AED 119.7K)** and **Electrical (13.21% / AED 69.6K)**.
@@ -117,7 +121,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q1.2: Are purchase volumes aligned with financial projections? How does our monthly purchase order (PO) spend compare across order dates vs. actual delivery dates?**
 
 * **Dashboard Visual Location:** Bottom Right Line Chart (`Monthly Spend Trend`).
-* **Image Placeholder:** `![Monthly Spend Trend](./images/spend_trend_line_chart.png)`
+  ![Monthly Spend Trend](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/Monthly%20spend%20.png)
 * **Data-Driven Answer:**
 * Spend commitments spiked significantly between **July 2026 and August 2026**.
 * The variance between `Total PO Value` (Order Date) and `Spend by Delivery Date` indicates an extended order-to-delivery lag during peak purchasing periods, impacting cash flow timing and inventory receipt schedules.
@@ -127,10 +131,10 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q1.3: Which product categories drive the highest procurement costs? Which high-cost SKUs contribute most to overall spending?**
 
 * **Dashboard Visual Location:** `Spend Distribution by Category` Donut Chart + Supplier Detail.
-* **Image Placeholder:** `![Category Spend Donut](./images/category_cost_drivers.png)`
+  ![Category Spend Donut]( https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/spend%20distribution%20.png)
 * **Data-Driven Answer:**
 * **Raw Materials** is the single largest cost driver, accounting for nearly half of total procurement capital (**46.72%**).
-* Negotiating volume discounts on Raw Material SKUs with top vendors (such as Apex Industrial and Global Metals) offers the highest potential for spend optimization.
+* Negotiating volume discounts on Raw Material SKUs with top vendors (such as Apex Industrial and Global Metals) offers the highest potential for spend optimisation.
 
 
 
@@ -141,7 +145,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q2.1: Which suppliers are lagging behind on delivery times? What is the On-Time Delivery Rate (%) for each supplier?**
 
 * **Dashboard Visual Location:** KPI Card 2 + `Supplier SLA & Performance Scorecard` Table.
-* **Image Placeholder:** `![Supplier SLA Table](./images/supplier_sla_table.png)`
+* **Image Placeholder:** (https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/matrix.png)
 * **Data-Driven Answer:**
 * **Overall On-Time Delivery (OTD) Rate:** **64%** across all supply lines.
 * **Lagging Vendors:** **Global Metals Trading** and **Atlas Chemicals & Fluids** have severe delays with only a **50% OTD Rate**.
@@ -152,7 +156,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q2.2: How accurate are our contractual lead times? What is the average lead time variance across suppliers?**
 
 * **Dashboard Visual Location:** KPI Card 4 + `Avg Actual Lead Time` column in Supplier Table.
-* **Image Placeholder:** `![Lead Time Variance](./images/supplier_lead_time.png)`
+![Lead Time Variance](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/lead%20time.png)
 * **Data-Driven Answer:**
 * **Average Lead Time:** **8 Days** across all fulfillment lines.
 * **Worst Lead-Time Offender:** **EuroMetal Tech GmbH** averages **21 Days** per delivery, representing a severe operational bottleneck despite a smaller total PO count.
@@ -162,7 +166,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q2.3: Which suppliers represent a single-point-of-failure risk?**
 
 * **Dashboard Visual Location:** Supplier Performance Matrix.
-* **Image Placeholder:** `![Vendor Concentration](./images/vendor_risk_matrix.png)`
+  ![Vendor Concentration](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/matrix.png)
 * **Data-Driven Answer:**
 * **Apex Industrial Supplies** holds **28% of total purchase orders (7 out of 25 POs)** and **AED 111.2K in spend**.
 * A delivery failure from Apex Industrial creates a significant operational risk for production lines due to vendor reliance.
@@ -174,7 +178,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ### 📄 Page 2: Inventory Valuation & Warehouse Operations Audit
 
 > **Dashboard Snapshot (Page 2):**
-> `![Page 2 Overview](./images/page2_inventory_operations.png)`
+> ![Page 2 Overview](./images/page2_inventory_operations.png)
 > *(Insert your Page 2 full screenshot here)*
 
 ---
@@ -184,7 +188,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q3.1: What is our total locked-up capital in stock across all warehouses?**
 
 * **Dashboard Visual Location:** Page 2 Header KPI Card 1.
-* **Image Placeholder:** `![Inventory Valuation KPI](./images/total_inventory_kpi.png)`
+![Inventory Valuation KPI](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/total%20inventory.png)
 * **Data-Driven Answer:**
 * **Total Locked-Up Inventory Value:** **AED 588K** across 6,000 total physical units on hand.
 
@@ -193,7 +197,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q3.2: Which products are at risk of stockouts? Which SKUs have fallen below their designated Reorder Level?**
 
 * **Dashboard Visual Location:** Page 2 Top Right Matrix (`Stockout Risk Alert`).
-* **Image Placeholder:** `![Low Stock Matrix](./images/low_stock_matrix_alert.png)`
+![Low Stock Matrix](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/low%20stock.png)
 * **Data-Driven Answer:**
 * **4 Critical SKUs** have breached safety stock thresholds and require immediate purchase orders.
 * **Example Flagged Item:** *Industrial Lubricant 5L* (Maintenance Category) has **47 units on hand** against a designated **Reorder Level of 50 units**.
@@ -203,7 +207,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q3.3: Where is inventory geographically concentrated?**
 
 * **Dashboard Visual Location:** Bottom Right Bar Chart (`Inventory Capital Allocation by Warehouse Facility`).
-* **Image Placeholder:** `![Warehouse Valuation Bar Chart](./images/warehouse_capital_bar_chart.png)`
+![Warehouse Valuation Bar Chart](./images/warehouse_capital_bar_chart.png)`
 * **Data-Driven Answer:**
 * Capital is heavily concentrated in **KIZAD Industrial Zone (AED 210K)** and **Jebel Ali Logistics Hub (AED 170K)**, which together represent over **64% of total inventory valuation**.
 * **RAK Industrial Park** holds the lowest stock concentration at **AED 50K**.
@@ -220,7 +224,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 * **Image Placeholder:** `![Warehouse Stock Movement](./images/stock_inflow_outflow_chart.png)`
 * **Data-Driven Answer:**
 * **Total Physical Movement:** **2,000 Units Inflow** processed across facilities.
-* Facilities like **Al Sajaa Facility (95.89% Inflow ratio)** and **KIZAD Industrial Zone (82.35% Inflow ratio)** act primarily as holding locations, while **RAK Industrial Park (100% Outflow)** operates as an active fulfillment point.
+* Facilities like **Al Sajaa Facility (95.89% Inflow ratio)** and **KIZAD Industrial Zone (82.35% Inflow ratio)** act primarily as holding locations, while **RAK Industrial Park (100% Outflow)** operates as an active fulfilment point.
 
 
 
