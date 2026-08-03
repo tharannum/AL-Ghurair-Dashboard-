@@ -110,7 +110,9 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q1.1: Where is our capital going? What is our total procurement spend, and how is it distributed across suppliers, product categories, and order statuses?**
 
 * **Dashboard Visual Location:** Top Left KPI Card + Donut Chart + Top Right Supplier Matrix.
+* 
   ![Spend Breakdown](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/procurement.png)
+  
 * **Data-Driven Answer:**
 * **Total Procurement Spend:** **AED 527K** across 25 Purchase Orders.
 * **Category Distribution:** Spending is heavily concentrated in **Raw Materials (46.72% / AED 246.2K)**, followed by **Maintenance (22.71% / AED 119.7K)** and **Electrical (13.21% / AED 69.6K)**.
@@ -145,7 +147,9 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q2.1: Which suppliers are lagging behind on delivery times? What is the On-Time Delivery Rate (%) for each supplier?**
 
 * **Dashboard Visual Location:** KPI Card 2 + `Supplier SLA & Performance Scorecard` Table.
-* **Image Placeholder:** (https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/matrix.png)
+
+![kpi](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/matrix.png)
+
 * **Data-Driven Answer:**
 * **Overall On-Time Delivery (OTD) Rate:** **64%** across all supply lines.
 * **Lagging Vendors:** **Global Metals Trading** and **Atlas Chemicals & Fluids** have severe delays with only a **50% OTD Rate**.
@@ -156,7 +160,9 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q2.2: How accurate are our contractual lead times? What is the average lead time variance across suppliers?**
 
 * **Dashboard Visual Location:** KPI Card 4 + `Avg Actual Lead Time` column in Supplier Table.
+  
 ![Lead Time Variance](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/lead%20time.png)
+
 * **Data-Driven Answer:**
 * **Average Lead Time:** **8 Days** across all fulfillment lines.
 * **Worst Lead-Time Offender:** **EuroMetal Tech GmbH** averages **21 Days** per delivery, representing a severe operational bottleneck despite a smaller total PO count.
@@ -166,7 +172,9 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q2.3: Which suppliers represent a single-point-of-failure risk?**
 
 * **Dashboard Visual Location:** Supplier Performance Matrix.
+
   ![Vendor Concentration](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/matrix.png)
+  
 * **Data-Driven Answer:**
 * **Apex Industrial Supplies** holds **28% of total purchase orders (7 out of 25 POs)** and **AED 111.2K in spend**.
 * A delivery failure from Apex Industrial creates a significant operational risk for production lines due to vendor reliance.
@@ -188,7 +196,9 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q3.1: What is our total locked-up capital in stock across all warehouses?**
 
 * **Dashboard Visual Location:** Page 2 Header KPI Card 1.
+* 
 ![Inventory Valuation KPI](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/total%20inventory.png)
+
 * **Data-Driven Answer:**
 * **Total Locked-Up Inventory Value:** **AED 588K** across 6,000 total physical units on hand.
 
@@ -197,7 +207,9 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q3.2: Which products are at risk of stockouts? Which SKUs have fallen below their designated Reorder Level?**
 
 * **Dashboard Visual Location:** Page 2 Top Right Matrix (`Stockout Risk Alert`).
+  
 ![Low Stock Matrix](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/low%20stock.png)
+
 * **Data-Driven Answer:**
 * **4 Critical SKUs** have breached safety stock thresholds and require immediate purchase orders.
 * **Example Flagged Item:** *Industrial Lubricant 5L* (Maintenance Category) has **47 units on hand** against a designated **Reorder Level of 50 units**.
@@ -207,7 +219,9 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q3.3: Where is inventory geographically concentrated?**
 
 * **Dashboard Visual Location:** Bottom Right Bar Chart (`Inventory Capital Allocation by Warehouse Facility`).
-![Warehouse Valuation Bar Chart](./images/warehouse_capital_bar_chart.png)`
+  
+![Warehouse Valuation Bar Chart](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/inventory%20capital.png)
+
 * **Data-Driven Answer:**
 * Capital is heavily concentrated in **KIZAD Industrial Zone (AED 210K)** and **Jebel Ali Logistics Hub (AED 170K)**, which together represent over **64% of total inventory valuation**.
 * **RAK Industrial Park** holds the lowest stock concentration at **AED 50K**.
@@ -221,7 +235,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q4.1: How fast is stock moving through our facilities? What is the ratio of Stock Inflow vs. Stock Outflow?**
 
 * **Dashboard Visual Location:** Bottom Left Stacked Bar Chart (`Warehouse Operations Audit: Inbound Stock vs. Outbound Movement`).
-* **Image Placeholder:** `![Warehouse Stock Movement](./images/stock_inflow_outflow_chart.png)`
+![Warehouse Stock Movement]( https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/warehouse%20operation.png)
 * **Data-Driven Answer:**
 * **Total Physical Movement:** **2,000 Units Inflow** processed across facilities.
 * Facilities like **Al Sajaa Facility (95.89% Inflow ratio)** and **KIZAD Industrial Zone (82.35% Inflow ratio)** act primarily as holding locations, while **RAK Industrial Park (100% Outflow)** operates as an active fulfilment point.
@@ -231,7 +245,7 @@ Cleaned transaction logs exported from Al Ghurair’s Enterprise Resource Planni
 ##### **Q4.2: Which items are fast-moving vs. slow-moving?**
 
 * **Dashboard Visual Location:** Interaction between Low Stock Matrix and Movement Audit.
-* **Image Placeholder:** `![Fast Slow Moving SKUs](./images/sku_velocity_analysis.png)`
+![Fast Slow Moving SKUs](https://github.com/tharannum/AL-Ghurair-Dashboard-/blob/main/warehouse%20operation.png)
 * **Data-Driven Answer:**
 * **Fast-Moving SKUs:** Maintenance and packaging materials show high throughput ratios and quick depletion below safety limits.
 * **Slow-Moving SKUs:** Specific electrical component categories remain stored in high valuations at KIZAD without proportional outbound velocity.
